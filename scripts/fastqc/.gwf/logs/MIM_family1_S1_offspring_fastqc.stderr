@@ -1,0 +1,46 @@
+Started analysis of MIM_family1_S1_offspring_R1.fq.gz
+Started analysis of MIM_family1_S1_offspring_R2.fq.gz
+Approx 5% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 5% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 10% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 10% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 15% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 20% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 15% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 25% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 20% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 30% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 25% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 35% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 40% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 30% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 45% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 35% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 50% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 40% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 55% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 60% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 45% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 65% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 50% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 70% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 55% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 75% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 80% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 60% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 85% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 65% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 90% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 70% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 95% complete for MIM_family1_S1_offspring_R2.fq.gz
+Approx 75% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 80% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 85% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 90% complete for MIM_family1_S1_offspring_R1.fq.gz
+Approx 95% complete for MIM_family1_S1_offspring_R1.fq.gz
+Failed to process file MIM_family1_S1_offspring_R1.fq.gz
+uk.ac.babraham.FastQC.Sequence.SequenceFormatException: Ran out of data in the middle of a fastq entry.  Your file is probably truncated
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.readNext(FastQFile.java:187)
+	at uk.ac.babraham.FastQC.Sequence.FastQFile.next(FastQFile.java:129)
+	at uk.ac.babraham.FastQC.Analysis.AnalysisRunner.run(AnalysisRunner.java:77)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
