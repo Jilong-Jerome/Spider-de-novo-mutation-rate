@@ -1,0 +1,27 @@
+jobinfo 43620150
+start combining fq
+Wed Aug 28 13:00:00 CEST 2024
+finished combination
+Wed Aug 28 13:06:59 CEST 2024
+Name                : merge_fq_AFR_family4_S5_offspring_R2
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : cn-1045
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-08-28T12:59:37
+Start               : 2024-08-28T12:59:51
+End                 : --
+Waited              : 00:00:14
+Reserved walltime   : 08:00:00
+Used walltime       : 00:07:08
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.54M (cn-1045)
+Max Disk Write      : 51.16G (cn-1045)
+Max Disk Read       : 51.16G (cn-1045)

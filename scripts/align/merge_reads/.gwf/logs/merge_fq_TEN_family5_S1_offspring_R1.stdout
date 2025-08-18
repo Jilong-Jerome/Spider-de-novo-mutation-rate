@@ -1,0 +1,27 @@
+jobinfo 33672658
+start combining fq
+Tue Feb 27 13:09:44 CET 2024
+finished combination
+Tue Feb 27 13:14:44 CET 2024
+Name                : merge_fq_TEN_family5_S1_offspring_R1
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : s21n31
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-02-27T13:09:41
+Start               : 2024-02-27T13:09:44
+End                 : --
+Waited              : 00:00:03
+Reserved walltime   : 08:00:00
+Used walltime       : 00:05:00
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.68M (s21n31)
+Max Disk Write      : 82.64G (s21n31)
+Max Disk Read       : 82.64G (s21n31)

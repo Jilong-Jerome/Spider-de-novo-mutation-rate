@@ -1,0 +1,27 @@
+jobinfo 32643733
+start combining fq
+Sun Feb 18 14:00:56 CET 2024
+finished combination
+Sun Feb 18 14:08:18 CET 2024
+Name                : merge_fq_BIC_family5_S2_offspring_R2
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : s21n71
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-02-18T14:00:44
+Start               : 2024-02-18T14:00:48
+End                 : --
+Waited              : 00:00:04
+Reserved walltime   : 08:00:00
+Used walltime       : 00:07:30
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.68M (s21n71)
+Max Disk Write      : 40.73G (s21n71)
+Max Disk Read       : 40.73G (s21n71)

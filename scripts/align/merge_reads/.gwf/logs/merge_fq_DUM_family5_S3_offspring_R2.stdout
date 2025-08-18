@@ -1,0 +1,27 @@
+jobinfo 29207229
+start combining fq
+Tue Jan  9 17:40:21 CET 2024
+finished combination
+Tue Jan  9 17:53:47 CET 2024
+Name                : merge_fq_DUM_family5_S3_offspring_R2
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : cn-1042
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-01-09T17:39:11
+Start               : 2024-01-09T17:40:08
+End                 : --
+Waited              : 00:00:57
+Reserved walltime   : 08:00:00
+Used walltime       : 00:13:39
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.90M (cn-1042)
+Max Disk Write      : 36.02G (cn-1042)
+Max Disk Read       : 36.02G (cn-1042)

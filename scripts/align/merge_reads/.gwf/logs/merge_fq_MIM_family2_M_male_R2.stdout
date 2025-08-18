@@ -1,0 +1,27 @@
+jobinfo 29207100
+start combining fq
+Tue Jan  9 17:19:02 CET 2024
+finished combination
+Tue Jan  9 17:34:09 CET 2024
+Name                : merge_fq_MIM_family2_M_male_R2
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : s21n22
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-01-09T17:18:07
+Start               : 2024-01-09T17:18:53
+End                 : --
+Waited              : 00:00:46
+Reserved walltime   : 08:00:00
+Used walltime       : 00:15:16
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.64M (s21n22)
+Max Disk Write      : 48.48G (s21n22)
+Max Disk Read       : 48.48G (s21n22)

@@ -1,0 +1,27 @@
+jobinfo 29207372
+start combining fq
+Tue Jan  9 17:52:16 CET 2024
+finished combination
+Tue Jan  9 18:21:51 CET 2024
+Name                : merge_fq_SAR_family4_S4_offspring_R1
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : s21n51
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-01-09T17:49:41
+Start               : 2024-01-09T17:52:09
+End                 : --
+Waited              : 00:02:28
+Reserved walltime   : 08:00:00
+Used walltime       : 00:29:42
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.70M (s21n51)
+Max Disk Write      : 44.17G (s21n51)
+Max Disk Read       : 44.18G (s21n51)

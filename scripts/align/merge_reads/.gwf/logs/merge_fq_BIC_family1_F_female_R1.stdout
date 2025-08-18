@@ -1,0 +1,27 @@
+jobinfo 32643664
+start combining fq
+Sun Feb 18 14:00:53 CET 2024
+finished combination
+Sun Feb 18 14:07:51 CET 2024
+Name                : merge_fq_BIC_family1_F_female_R1
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : s21n43
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-02-18T14:00:43
+Start               : 2024-02-18T14:00:43
+End                 : --
+Waited              : 00:00:00
+Reserved walltime   : 08:00:00
+Used walltime       : 00:07:08
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.42M (s21n43)
+Max Disk Write      : 35.96G (s21n43)
+Max Disk Read       : 35.96G (s21n43)

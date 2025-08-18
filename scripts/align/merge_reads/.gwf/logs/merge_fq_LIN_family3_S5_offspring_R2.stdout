@@ -1,0 +1,27 @@
+jobinfo 23542971
+start combining fq
+Wed Sep  6 13:53:02 CEST 2023
+finished combination
+Wed Sep  6 13:55:26 CEST 2023
+Name                : merge_fq_LIN_family3_S5_offspring_R2
+User                : jilong
+Account             : spider2
+Partition           : normal
+Nodes               : s05n09
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2023-09-06T13:42:53
+Start               : 2023-09-06T13:53:02
+End                 : --
+Waited              : 00:10:09
+Reserved walltime   : 08:00:00
+Used walltime       : 00:02:24
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.23M (s05n09)
+Max Disk Write      : 47.59G (s05n09)
+Max Disk Read       : 47.59G (s05n09)

@@ -1,0 +1,27 @@
+jobinfo 29207111
+start combining fq
+Tue Jan  9 17:18:56 CET 2024
+finished combination
+Tue Jan  9 17:48:50 CET 2024
+Name                : merge_fq_MIM_family3_S6_offspring_R1
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : s21n21
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-01-09T17:18:09
+Start               : 2024-01-09T17:18:53
+End                 : --
+Waited              : 00:00:44
+Reserved walltime   : 08:00:00
+Used walltime       : 00:29:57
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.65M (s21n21)
+Max Disk Write      : 74.82G (s21n21)
+Max Disk Read       : 74.82G (s21n21)

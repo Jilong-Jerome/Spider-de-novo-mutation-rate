@@ -1,0 +1,27 @@
+jobinfo 23542992
+start combining fq
+Wed Sep  6 13:58:25 CEST 2023
+finished combination
+Wed Sep  6 14:01:26 CEST 2023
+Name                : merge_fq_LIN_family2_F_female_R1
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : s21n74
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2023-09-06T13:42:56
+Start               : 2023-09-06T13:58:25
+End                 : --
+Waited              : 00:15:29
+Reserved walltime   : 08:00:00
+Used walltime       : 00:03:01
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.21M (s21n74)
+Max Disk Write      : 48.95G (s21n74)
+Max Disk Read       : 48.96G (s21n74)

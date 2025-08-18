@@ -1,0 +1,27 @@
+jobinfo 29207157
+start combining fq
+Tue Jan  9 17:40:07 CET 2024
+finished combination
+Tue Jan  9 17:50:46 CET 2024
+Name                : merge_fq_DUM_family1_F_female_R2
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : s21n54
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-01-09T17:39:07
+Start               : 2024-01-09T17:40:06
+End                 : --
+Waited              : 00:00:59
+Reserved walltime   : 08:00:00
+Used walltime       : 00:10:40
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.89M (s21n54)
+Max Disk Write      : 56.00G (s21n54)
+Max Disk Read       : 56.00G (s21n54)

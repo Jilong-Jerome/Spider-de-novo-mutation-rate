@@ -1,0 +1,27 @@
+jobinfo 29207301
+start combining fq
+Tue Jan  9 17:52:16 CET 2024
+finished combination
+Tue Jan  9 18:15:04 CET 2024
+Name                : merge_fq_TEN_family4_M_male_R2
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : cn-1046
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-01-09T17:46:52
+Start               : 2024-01-09T17:52:07
+End                 : --
+Waited              : 00:05:15
+Reserved walltime   : 08:00:00
+Used walltime       : 00:22:57
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.91M (cn-1046)
+Max Disk Write      : 41.79G (cn-1046)
+Max Disk Read       : 41.79G (cn-1046)

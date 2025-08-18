@@ -1,0 +1,27 @@
+jobinfo 43620105
+start combining fq
+Wed Aug 28 13:00:08 CEST 2024
+finished combination
+Wed Aug 28 13:13:45 CEST 2024
+Name                : merge_fq_AFR_family2_F_female_R1
+User                : jilong
+Account             : spider2
+Partition           : short
+Nodes               : s21n84
+Cores               : 1
+GPUs                : 0
+State               : RUNNING
+ExitCode            : --
+Submit              : 2024-08-28T12:59:35
+Start               : 2024-08-28T12:59:51
+End                 : --
+Waited              : 00:00:16
+Reserved walltime   : 08:00:00
+Used walltime       : 00:13:55
+Used CPU time       : 00:00:00
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 2G
+Max Mem used        : 6.52M (s21n84)
+Max Disk Write      : 47.78G (s21n84)
+Max Disk Read       : 47.78G (s21n84)
