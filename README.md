@@ -39,8 +39,8 @@ Analysis pipeline, in reproduction order:
 |-------|-------------|
 | [`01_quality_control/`](workflows/01_quality_control/) | FastQC; sequencing-batch confound checks |
 | [`02_genome_preparation/`](workflows/02_genome_preparation/) | NCBI genome cleanup, indexing, genome composition / stats |
-| [`03_read_mapping_dnm_scan/`](workflows/03_read_mapping_dnm_scan/) | read merging, mapping, germline DNM scanning & filtering |
-| [`04_genotyping_gatk/`](workflows/04_genotyping_gatk/) | GATK joint genotyping (autosomes, minDP, X chromosome) |
+| [`03_read_mapping_genotyping/`](workflows/03_read_mapping_genotyping/) | read merging, bwa-mem2 mapping & GATK joint genotyping |
+| [`04_germline_dnm_scan/`](workflows/04_germline_dnm_scan/) | callable sites; germline DNM scanning & filtering (autosomes, minDP, X) |
 | [`05_dnm_location/`](workflows/05_dnm_location/) | DNM genomic location & inter-individual variance |
 | [`06_mutation_rate/`](workflows/06_mutation_rate/) | callable-genome estimation, rate tables, supplement tables |
 | [`07_mutation_spectrum/`](workflows/07_mutation_spectrum/) | germline mutation spectrum; germline-vs-somatic comparison |
@@ -74,7 +74,7 @@ environments and their purpose, plus a helper to export pinned `*.yml` files, is
 
 ```bash
 conda activate gwf_new          # gwf workflow manager
-cd workflows/03_read_mapping_dnm_scan
+cd workflows/03_read_mapping_genotyping
 gwf status                      # inspect the DAG / job states
 gwf run                         # submit pending jobs to SLURM
 ```
