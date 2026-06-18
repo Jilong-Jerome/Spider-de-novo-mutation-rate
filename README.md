@@ -47,7 +47,7 @@ Analysis pipeline, in reproduction order:
 | [`08_somatic_mutations/`](workflows/08_somatic_mutations/) | somatic DNM calling, spectrum tables, testis validation |
 | [`09_male_mutation_bias/`](workflows/09_male_mutation_bias/) | male mutation bias (alpha); parental-origin / shared DNMs |
 | [`10_dnds_branch/`](workflows/10_dnds_branch/) | branch dN/dS (PAML codeml) |
-| [`11_dna_repair_genes/`](workflows/11_dna_repair_genes/) | DNA-repair gene divergence, differential expression & presence/absence |
+| [`11_dna_repair_genes/`](workflows/11_dna_repair_genes/) | DNA-repair gene differential expression & presence/absence |
 | [`12_kinship/`](workflows/12_kinship/) | trio/kinship verification (PLINK, relatedness) |
 | [`13_chromosome_X/`](workflows/13_chromosome_X/) | X-chromosome depth & per-chromosome statistics |
 
