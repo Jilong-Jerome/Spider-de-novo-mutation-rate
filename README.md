@@ -84,11 +84,6 @@ at your local copies of the data described in `docs/DATA_AVAILABILITY.md`. The
 hard-coded `/faststorage/...` paths reflect the original compute environment and
 must be adapted.
 
-## Citation
-
-If you use this code, please cite the manuscript above. Repository citation
-metadata is in [`CITATION.cff`](CITATION.cff).
-
 ## License
 
 Released under the MIT License — see [`LICENSE`](LICENSE).
