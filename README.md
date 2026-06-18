@@ -50,7 +50,6 @@ Analysis pipeline, in reproduction order:
 | [`11_dna_repair_genes/`](workflows/11_dna_repair_genes/) | DNA-repair gene divergence & differential expression |
 | [`12_kinship/`](workflows/12_kinship/) | trio/kinship verification (PLINK, relatedness) |
 | [`13_chromosome_X/`](workflows/13_chromosome_X/) | X-chromosome depth & per-chromosome statistics |
-| [`14_mating_simulation/`](workflows/14_mating_simulation/) | mating / generation-overlap simulation |
 
 Supporting material:
 

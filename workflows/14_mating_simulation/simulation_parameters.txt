@@ -1,8 +1,0 @@
-Simulation Parameters:
-num_males: 2000
-num_females: 2000
-dt: 0.1
-alpha: 1e-05
-death_rate_moving: 0.02
-death_rate_mating: 0.1
-death_rate_female: 0.001
