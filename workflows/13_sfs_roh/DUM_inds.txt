@@ -1,9 +1,0 @@
-D_family1_41_female
-D_family2_42_female
-D_family3_43_female
-D_family4_44_female
-D_family5_45_female
-D_family1_46_male
-D_family2_47_male
-D_family3_48_male
-D_family4_49_male

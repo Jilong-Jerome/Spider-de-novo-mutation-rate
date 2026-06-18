@@ -47,9 +47,8 @@ workflows/                     analysis pipeline, in reproduction order
   10_dnds_branch/              branch dN/dS (PAML) and recombination-associated analyses
   11_dna_repair_genes/         DNA-repair gene divergence & differential expression
   12_kinship/                  trio/kinship verification (PLINK, relatedness)
-  13_sfs_roh/                  site frequency spectrum & runs of homozygosity
-  14_chromosome_X/             X-chromosome depth & per-chromosome statistics
-  15_mating_simulation/        mating / generation-overlap simulation
+  13_chromosome_X/             X-chromosome depth & per-chromosome statistics
+  14_mating_simulation/        mating / generation-overlap simulation
 environment/                   conda environment documentation + export helper
 docs/                          collected supplemental methods + data availability
 ```

@@ -1,5 +1,0 @@
-/home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/steps/mutations_refined/genotype_trio/D_family1_1/D_family1_1_combine_aa.vcf.gz
-/home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/steps/mutations_refined/genotype_trio/D_family2_1/D_family2_1_combine_aa.vcf.gz
-/home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/steps/mutations_refined/genotype_trio/D_family3_1/D_family3_1_combine_aa.vcf.gz
-/home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/steps/mutations_refined/genotype_trio/D_family4_1/D_family4_1_combine_aa.vcf.gz
-/home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/steps/mutations_refined/genotype_trio/D_family5_1/D_family5_1_combine_aa.vcf.gz

@@ -1,4 +1,4 @@
-# 14 · Chromosome X
+# 13 · Chromosome X
 
 gwf workflow (entry point `workflow.py` with `workflow_templates.py`,
 `workflow_targets.py`).

@@ -1,4 +1,4 @@
-# 15 · Mating / generation-overlap simulation
+# 14 · Mating / generation-overlap simulation
 
 Simulation of mating and overlapping generations to interpret mutation-rate
 differences between social and subsocial life histories.
