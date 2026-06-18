@@ -33,25 +33,31 @@ independently multiple times):
 
 ## Repository layout
 
-```
-workflows/                     analysis pipeline, in reproduction order
-  01_quality_control/          FastQC; sequencing-batch confound checks
-  02_genome_preparation/       NCBI genome cleanup, indexing, genome composition / stats
-  03_read_mapping_dnm_scan/    read merging, mapping, germline DNM scanning & filtering
-  04_genotyping_gatk/          GATK joint genotyping (autosomes, minDP, X chromosome)
-  05_dnm_location/             DNM genomic location & inter-individual variance
-  06_mutation_rate/            callable-genome estimation, rate tables, supplement tables
-  07_mutation_spectrum/        germline mutation spectrum; germline-vs-somatic comparison
-  08_somatic_mutations/        somatic DNM calling, spectrum tables, testis validation
-  09_male_mutation_bias/       male mutation bias (alpha); parental-origin / shared DNMs
-  10_dnds_branch/              branch dN/dS (PAML) and recombination-associated analyses
-  11_dna_repair_genes/         DNA-repair gene divergence & differential expression
-  12_kinship/                  trio/kinship verification (PLINK, relatedness)
-  13_chromosome_X/             X-chromosome depth & per-chromosome statistics
-  14_mating_simulation/        mating / generation-overlap simulation
-environment/                   conda environment documentation + export helper
-docs/                          collected supplemental methods + data availability
-```
+Analysis pipeline, in reproduction order:
+
+| Stage | Description |
+|-------|-------------|
+| [`01_quality_control/`](workflows/01_quality_control/) | FastQC; sequencing-batch confound checks |
+| [`02_genome_preparation/`](workflows/02_genome_preparation/) | NCBI genome cleanup, indexing, genome composition / stats |
+| [`03_read_mapping_dnm_scan/`](workflows/03_read_mapping_dnm_scan/) | read merging, mapping, germline DNM scanning & filtering |
+| [`04_genotyping_gatk/`](workflows/04_genotyping_gatk/) | GATK joint genotyping (autosomes, minDP, X chromosome) |
+| [`05_dnm_location/`](workflows/05_dnm_location/) | DNM genomic location & inter-individual variance |
+| [`06_mutation_rate/`](workflows/06_mutation_rate/) | callable-genome estimation, rate tables, supplement tables |
+| [`07_mutation_spectrum/`](workflows/07_mutation_spectrum/) | germline mutation spectrum; germline-vs-somatic comparison |
+| [`08_somatic_mutations/`](workflows/08_somatic_mutations/) | somatic DNM calling, spectrum tables, testis validation |
+| [`09_male_mutation_bias/`](workflows/09_male_mutation_bias/) | male mutation bias (alpha); parental-origin / shared DNMs |
+| [`10_dnds_branch/`](workflows/10_dnds_branch/) | branch dN/dS (PAML) and recombination-associated analyses |
+| [`11_dna_repair_genes/`](workflows/11_dna_repair_genes/) | DNA-repair gene divergence & differential expression |
+| [`12_kinship/`](workflows/12_kinship/) | trio/kinship verification (PLINK, relatedness) |
+| [`13_chromosome_X/`](workflows/13_chromosome_X/) | X-chromosome depth & per-chromosome statistics |
+| [`14_mating_simulation/`](workflows/14_mating_simulation/) | mating / generation-overlap simulation |
+
+Supporting material:
+
+| Folder | Description |
+|--------|-------------|
+| [`environment/`](environment/README.md) | conda environment documentation + export helper |
+| [`docs/`](docs/DATA_AVAILABILITY.md) | data availability + [supplemental methods index](docs/methods/README.md) |
 
 Each `workflows/NN_*/` (or its named sub-analyses) is a self-contained
 [gwf](https://gwf.app) project. Many sub-directories carry their own `README.md`
