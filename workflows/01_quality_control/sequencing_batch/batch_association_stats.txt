@@ -1,0 +1,73 @@
+========================================================================
+SEQUENCING-BATCH STRUCTURE CHECKS
+========================================================================
+271 individuals  |  65 parents, 206 probands  |  34 families  |  73 flowcells
+
+------------------------------------------------------------------------
+1. Sequencing platform
+------------------------------------------------------------------------
+All 271 individuals were sequenced on a single platform (DNBSEQ-G400).
+The differing flowcell-ID prefixes (V300.../V350.../DP8400.../FP100...)
+are flowcell/run identifiers on this one platform, not different
+platforms, instruments or library kits.  => No platform/kit confound
+exists by construction; the only batch axis is the flowcell.
+
+------------------------------------------------------------------------
+2. Flowcell-batch structure   (the batch unit is the flowcell)
+------------------------------------------------------------------------
+Individuals per flowcell : median 4, mean 5.3, range 1-17
+Families   per flowcell : median 2, mean 2.2, range 1-7
+Flowcells  per family   : median 4, mean 4.7, range 2-8
+individuals-per-flowcell dist (count:flowcells): 1:7, 2:6, 3:5, 4:25, 5:4, 6:5, 7:6, 8:7, 9:1, 11:1, 12:2, 15:2, 16:1, 17:1
+=> Sequencing was distributed sample-/family-wise across many small
+   flowcells, NOT concentrated into a few large pooled batches, so no
+   single batch could group all social trios apart from subsocial trios.
+
+Flowcell composition (functionally contain a single ... vs span >1):
+   single-species   : 62/73   (span >1 species : 11)
+   single-family    : 33/73   (span >1 family  : 40)
+   single-sociality : 65/73   (span both classes: 8)
+   single-individual: 7/73
+=> Most flowcells are nested within one species/family and so cannot
+   separate social from subsocial; of the 11 that mix species,
+   8 mix ACROSS the divide (Section 3) and 3 combine species
+   within one sociality class, so none isolates social from subsocial.
+   Either way flowcell batch is independent of the biological comparison.
+
+------------------------------------------------------------------------
+3. Flowcell assignment vs. sociality and role   (decisive)
+------------------------------------------------------------------------
+Flowcells carrying BOTH social and subsocial individuals: 8/73
+   DP8400011312BL  ->  S. dumicola (social), S. tentoriicola (subsocial)
+   DP8400011454TL  ->  S. dumicola (social), S. tentoriicola (subsocial)
+   DP8400011678BR  ->  S. dumicola (social), S. tentoriicola (subsocial)
+   DP8400011737BL  ->  S. dumicola (social), S. mimosarum (social), S. tentoriicola (subsocial)
+   V300088307  ->  S. lineatus (subsocial), S. sarasinorum (social)
+   V300088321  ->  S. lineatus (subsocial), S. sarasinorum (social)
+   V300088752  ->  S. lineatus (subsocial), S. sarasinorum (social)
+   V300101732  ->  S. lineatus (subsocial), S. sarasinorum (social)
+Parent/proband flowcell composition:
+   parent-only : 5/73
+   proband-only: 34/73
+   mixed (both): 34/73
+   families with a parent AND a proband of that family co-sequenced on
+   >=1 shared flowcell: 20/34
+=> The same flowcells span the social/subsocial divide (and a third mix
+   parents and probands; 20/34 trios co-sequence a parent and proband),
+   so flowcell identity is not aligned with sociality or role.  Flowcell-
+   level technical variation cannot therefore produce a systematic
+   social-vs-subsocial difference, nor a parents-vs-probands batch split.
+
+------------------------------------------------------------------------
+4. Total coverage  x  role   (Mann-Whitney U)
+------------------------------------------------------------------------
+parents : n= 65  mean= 85.8x  median= 83.1x
+probands: n=206  mean= 90.9x  median= 83.1x
+Mann-Whitney U=6152, p=0.325
+=> Both groups are deeply sequenced (median ~83x parent / ~83x proband; mean 86x / 91x).  The
+   Mann-Whitney test shows no significant difference in total coverage
+   (p=0.32), and if anything probands carry slightly HIGHER mean
+   coverage than parents, so offspring are not under-powered and the
+   within-family de novo mutation comparison is not biased against
+   detection.
+

@@ -1,0 +1,14 @@
+TAG: jilong:spider2:dnm_rate:workflowconfiguration
+account: spider2
+project_name: DNM Mutation Rate Analysis
+
+# Reuse the species, exclude_trios, x_chromosomes, spectrum_groups, and
+# data paths from the spectrum workflow (single source of truth).
+species_config: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/dnm_spectrum/configurations/spectrum.config.yaml
+
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/dnm_rate/workflow_sources
+samtools_conda_env: samtools117
+python_conda_env: python_phylo

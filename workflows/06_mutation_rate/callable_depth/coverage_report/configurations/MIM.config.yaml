@@ -1,0 +1,31 @@
+TAG: jilong:spider2:coverage_report:workflowconfiguration
+account: spider2
+species: MIM
+bam_dir: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/MIM
+vcf: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/MIM_GATK.vcf.gz
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/workflow_sources
+# Conda environments used by the workflow steps
+conda_samtools: samtools117
+conda_bcftools: bcftools
+conda_python: python_phylo
+# Chromosomes (from the BAM @SQ / VCF ##contig header). Per-chromosome VCF
+# targets are built from this list at graph-build time.
+chromosomes:
+  - mim_X1
+  - mim_7
+  - mim_9
+  - mim_14
+  - mim_8
+  - mim_X2
+  - mim_10
+  - mim_11
+  - mim_12
+  - mim_13
+  - mim_5
+  - mim_1
+  - mim_3
+  - mim_2
+  - mim_6
+  - mim_4

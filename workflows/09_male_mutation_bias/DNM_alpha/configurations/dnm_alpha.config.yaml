@@ -1,0 +1,69 @@
+TAG: jilong:spider2:dnm_alpha:workflowconfiguration
+account: spider2
+project_name: DNM Alpha Germline Mutation Metrics
+
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_alpha
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_alpha/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_alpha/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_alpha/workflow_sources
+python_conda_env: python_phylo
+n_bootstrap_parental_rates: 10000
+bootstrap_seed: 42
+
+dnm_tsv: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_alpha/data/dnm/autosomal_DNM_spread_sheet.tsv
+callable_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_alpha/data/callable
+
+species:
+  AFR:
+    lifestyle: subsocial
+    exclude_trios: []
+  BIC:
+    lifestyle: subsocial
+    exclude_trios:
+      - BIC_family2_S1_offspring
+      - BIC_family2_S2_offspring
+      - BIC_family2_S3_offspring
+      - BIC_family2_S4_offspring
+      - BIC_family2_S5_offspring
+      - BIC_family2_S6_offspring
+      - BIC_family3_S1_offspring
+      - BIC_family3_S2_offspring
+      - BIC_family3_S3_offspring
+      - BIC_family3_S4_offspring
+      - BIC_family3_S5_offspring
+      - BIC_family3_S6_offspring
+  DUM:
+    lifestyle: social
+    exclude_trios: []
+  LIN:
+    lifestyle: subsocial
+    exclude_trios: []
+  MIM:
+    lifestyle: social
+    exclude_trios: []
+  SAR:
+    lifestyle: social
+    exclude_trios:
+      - SAR_family3_S1_offspring
+      - SAR_family3_S2_offspring
+      - SAR_family3_S3_offspring
+      - SAR_family3_S4_offspring
+      - SAR_family3_S5_offspring
+      - SAR_family3_S6_offspring
+  TEN:
+    lifestyle: subsocial
+    exclude_trios: []
+
+species_tree_newick: "((((DUM:social,TEN:subsocial),(SAR:social,BIC:subsocial)),(MIM:social,AFR:subsocial)),LIN:subsocial);"
+spectrum_groups:
+  social:
+    species:
+      - DUM
+      - MIM
+      - SAR
+  subsocial:
+    species:
+      - AFR
+      - BIC
+      - LIN
+      - TEN

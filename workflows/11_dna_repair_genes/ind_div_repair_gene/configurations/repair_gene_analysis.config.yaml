@@ -1,0 +1,32 @@
+# Tag identifying file association
+TAG: jilong:spider2:repair_gene_analysis:workflowconfiguration
+
+# Account for SLURM
+account: spider2
+
+# Project identification
+project_name: Repair Gene Genotype Analysis
+project_id: repair_gene
+
+# Base directory for this analysis
+base_directory: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/ind_div_repair_gene
+
+# Directory paths
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/ind_div_repair_gene
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/ind_div_repair_gene/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/ind_div_repair_gene/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/ind_div_repair_gene/workflow_sources
+data_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/ind_div_repair_gene/data
+
+# Species to analyze (multi-species ready)
+species:
+  - AFR
+  - MIM
+  - TEN
+
+# Quality thresholds for callable sites
+min_depth: 10
+min_genotype_quality: 20
+
+# Conda environment for analysis
+conda_env: python_phylo

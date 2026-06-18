@@ -1,0 +1,7 @@
+BIC
+SAR
+TEN
+DUM
+AFR
+MIM
+LIN

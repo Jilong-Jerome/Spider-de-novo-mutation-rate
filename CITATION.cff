@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript."
+title: "Spider de novo mutation rate — analysis code"
+abstract: >-
+  Pipeline and downstream analysis code for estimating germline and somatic
+  de novo mutation rates from parent-offspring trios across seven Stegodyphus
+  spider species with independent origins of sociality.
+type: software
+# TODO: complete the author list (full names, order, ORCIDs) to match the manuscript.
+authors:
+  - given-names: "Jilong"
+    family-names: "TODO-surname"
+    alias: "Jilong-Jerome"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/Jilong-Jerome/Spider-de-novo-mutation-rate"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Convergent Evolution of Sociality Causes Reduction of Mutation Rates in Spiders"
+  doi: "10.1101/2025.07.09.663850"
+  url: "https://www.biorxiv.org/content/10.1101/2025.07.09.663850v1"
+  year: 2025
+  # TODO: add full author list, journal, and volume/pages when published.
+  authors:
+    - given-names: "Jilong"
+      family-names: "TODO-surname"

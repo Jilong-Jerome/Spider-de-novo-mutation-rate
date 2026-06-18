@@ -1,0 +1,95 @@
+======================================================================
+FILTERING SUMMARY
+======================================================================
+Raw rows loaded               : 921
+Rows with unparseable child   : 0  (excluded)
+Rows excluded (wrong species) : 323  (kept: BIC, LIN, TEN)
+Rows excluded (excluded fams) : 200  (BIC_family2, BIC_family3)
+Rows retained for analysis    : 398
+Families retained             : BIC_family1, BIC_family4, BIC_family5, LIN_family1, LIN_family2, LIN_family3, LIN_family4, TEN_family1, TEN_family2, TEN_family3, TEN_family4
+
+======================================================================
+MUTATION COUNTS (collapsed events)
+======================================================================
+Species  Unique  Shared  Total
+-------  ------  ------  -----
+BIC      89      16      105  
+LIN      170     8       178  
+TEN      81      1       82   
+OVERALL  340     25      365  
+
+======================================================================
+PHASING BREAKDOWN (per species and overall)
+======================================================================
+Group    Class   P    M   U    F  CONFLICT  Total_events
+-------  ------  ---  --  ---  -  --------  ------------
+BIC      unique  25   15  48   1  0         89          
+BIC      shared  3    8   5    0  0         16          
+LIN      unique  55   41  69   5  0         170         
+LIN      shared  2    4   2    0  0         8           
+TEN      unique  26   19  33   3  0         81          
+TEN      shared  0    1   0    0  0         1           
+OVERALL  unique  106  75  150  9  0         340         
+OVERALL  shared  5    13  7    0  0         25          
+
+Integrity check (P+M+U+F+CONFLICT == Total_events):
+  BIC         unique  89 == 89  OK
+  BIC         shared  16 == 16  OK
+  LIN         unique  170 == 170  OK
+  LIN         shared  8 == 8  OK
+  TEN         unique  81 == 81  OK
+  TEN         shared  1 == 1  OK
+  OVERALL     unique  340 == 340  OK
+  OVERALL     shared  25 == 25  OK
+  All checks passed.
+
+======================================================================
+PATERNAL BIAS (P / M)
+======================================================================
+Group    Class   P    M   P/M_ratio
+-------  ------  ---  --  ---------
+BIC      unique  25   15  1.6667   
+BIC      shared  3    8   0.3750   
+LIN      unique  55   41  1.3415   
+LIN      shared  2    4   0.5000   
+TEN      unique  26   19  1.3684   
+TEN      shared  0    1   0.0000   
+OVERALL  unique  106  75  1.4133   
+OVERALL  shared  5    13  0.3846   
+
+======================================================================
+FISHER'S EXACT TEST (overall, all species combined)
+======================================================================
+
+2×2 contingency table:
+                  Paternal (P)  Maternal (M)
+  Unique                  106            75
+  Shared                    5            13
+
+Odds ratio : 3.6747
+P-value    : 0.02273
+Result     : significant (α=0.05)
+
+======================================================================
+PHASING CONFLICTS (P/M disagreement within shared event)
+======================================================================
+No phasing conflicts detected.
+
+======================================================================
+NOTES
+======================================================================
+1. Species analysed : BIC, LIN, TEN
+2. Excluded families: BIC_family2, BIC_family3
+3. Shared mutations collapsed to one event per (chrom, pos, ref, alt, family).
+4. Phase resolution for shared events (priority order):
+     all same        → keep that phase
+     P + U (no M)    → resolve to P
+     M + U (no P)    → resolve to M
+     P + M           → CONFLICT (excluded from bias/test)
+     all U           → U
+     all F           → F
+     F mixed others  → F labels dropped; remaining labels re-evaluated
+5. Paternal bias = P / M; U, F, CONFLICT excluded.
+6. Fisher's exact test run once (overall), two-sided.
+   Test skipped (NaN) if either class has 0 phased mutations.
+7. Analysis run: 2026-03-12 15:43:48

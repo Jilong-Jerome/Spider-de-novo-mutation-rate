@@ -1,0 +1,47 @@
+# Tag identifying file association.
+TAG: jilong:spider2:checking_variant_in_genes:workflowconfiguration
+# The name of the relevant project account.
+account: spider2
+# Name of species being analyzed
+species_name: Stegodyphus lineatus
+# ID of species for short
+species_id : LIN
+
+  
+# old genome reference:
+old_ref: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/data/hyper/LIN_hifi_hic_scaffolded_trim.fa
+# new genome reference:
+new_ref: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/data/hyper/LIN_ncbi_chromosome.fa
+# old gene gffs:
+gene:
+  - MLH1
+  - PMS2
+  - MBD4
+  - MUTYH
+  - OGG1
+  - TDG
+  - MSH2
+  - MSH6
+  - ERCC2
+# vcf file of the species germline mutation rate scanning
+species_vcf: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/steps/gatk/genotype/LIN/LIN_GATK.vcf.gz
+
+#Gene identification results
+homologs_blast: /faststorage/project/spider2/social_spiders_2020/people/jilong/steps/annotate/gene_identify/DUM/dumicola_eukaryota_match.tsv
+#Species used for gene identification
+homologs_blast_species: DUM
+#gff annotation of the genes in the species for gene identification
+homologs_blast_species_gff: /faststorage/project/spider2/social_spiders_2020/people/jilong/steps/annotate/braker/dumicola/etp_mode/DUM_braker.gff3
+#gff of the species to find homologs in
+target_species_gff: /faststorage/project/spider2/social_spiders_2020/people/jilong/steps/PUB1_GENOME/dnds/annotations/LIN_Ste_All_gene.gff3
+# orthogroups defined by orthofinder2
+orthogroups: /faststorage/project/spider2/social_spiders_2020/people/jilong/steps/genespace/Ste_All6sp/orthofinder/Results_Sep17/Orthogroups/Orthogroups.tsv
+ 
+# Directory for intermediary files.
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/steps/hyper
+# Directory for log files
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/steps/hyper/logs
+# Directory for helping functions and scripts
+help_scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/script/hyper/workflow_sources
+# depth path
+depth_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/steps/germline/LIN/filters

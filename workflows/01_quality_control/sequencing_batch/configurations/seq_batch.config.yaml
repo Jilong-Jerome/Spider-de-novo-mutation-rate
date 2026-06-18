@@ -1,0 +1,14 @@
+TAG: jilong:spider2:chapter3_dnm:science_resub:sequencing_batch
+account: spider2
+project_name: Sequencing Batch Summary
+project_id: seq_batch
+data_directory: /faststorage/project/spider2/social_spiders_2020/data/BACKUP/BGIseq_data/mutation_recombination
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/sequencing_batch
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/sequencing_batch/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/sequencing_batch/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/sequencing_batch/workflow_sources
+final_output: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/sequencing_batch/sequencing_summary.tsv
+fai_directory: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/sequencing_batch/data
+coverage_output: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/sequencing_batch/sequencing_summary_with_coverage.tsv
+heatmap_output: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/sequencing_batch/sequencing_heatmap.pdf
+scatter_output: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/sequencing_batch/sequencing_coverage_scatter.pdf

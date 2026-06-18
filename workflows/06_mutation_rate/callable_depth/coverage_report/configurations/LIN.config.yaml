@@ -1,0 +1,38 @@
+TAG: jilong:spider2:coverage_report:workflowconfiguration
+account: spider2
+species: LIN
+bam_dir: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/LIN
+vcf: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/LIN_GATK.vcf.gz
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/workflow_sources
+# Conda environments used by the workflow steps
+conda_samtools: samtools117
+conda_bcftools: bcftools
+conda_python: python_phylo
+# Chromosomes (from the BAM @SQ / VCF ##contig header). Per-chromosome VCF
+# targets are built from this list at graph-build time.
+chromosomes:
+  - lin_7
+  - lin_X2
+  - lin_X1
+  - lin_18
+  - lin_12
+  - lin_5
+  - lin_8
+  - lin_1
+  - lin_13
+  - lin_3
+  - lin_4
+  - lin_2
+  - lin_6
+  - lin_20
+  - lin_X3
+  - lin_9
+  - lin_17
+  - lin_19
+  - lin_16
+  - lin_11
+  - lin_10
+  - lin_15
+  - lin_14

@@ -1,0 +1,29 @@
+TAG: jilong:spider2:coverage_report:workflowconfiguration
+account: spider2
+species: DUM
+bam_dir: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/DUM
+vcf: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/DUM_GATK.vcf.gz
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/workflow_sources
+# Conda environments used by the workflow steps
+conda_samtools: samtools117
+conda_bcftools: bcftools
+conda_python: python_phylo
+# Chromosomes (from the BAM @SQ / VCF ##contig header). Per-chromosome VCF
+# targets are built from this list at graph-build time.
+chromosomes:
+  - dum_1
+  - dum_2
+  - dum_3
+  - dum_4
+  - dum_X1
+  - dum_5
+  - dum_6
+  - dum_7
+  - dum_X2
+  - dum_8
+  - dum_9
+  - dum_10
+  - dum_11
+  - dum_12

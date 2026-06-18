@@ -1,0 +1,16 @@
+TAG: jilong:spider2:dnm_final_visuals:workflowconfiguration
+account: spider2
+project_name: DNM Final Visual Presentations
+
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/dnm_final_visuals/workflow_sources
+python_conda_env: python_phylo
+
+per_trio_germline_tsv: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/rate/master/per_trio_germline_mutations_callable.tsv
+per_species_somatic_tsv: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/rate/master/per_species_somatic_mutations_callable.tsv
+all_species_spectrum_test_tsv: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/comparison/all_species/all_species_germline_vs_somatic_test.tsv
+
+bootstrap_replicates: 10000
+bootstrap_seed: 20260430

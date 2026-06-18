@@ -1,0 +1,52 @@
+TAG: jilong:spider2:kinship_identification:bic:workflowconfiguration
+account: spider2
+project_name: Pairwise Kinship Identification (sibling vs parent-offspring)
+
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/kinship_identification
+output_directory_path:  /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/kinship_identification/steps
+log_directory_path:     /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/kinship_identification/logs
+scripts_path:           /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/kinship_identification/workflow_sources
+
+# Conda environments / external tools
+# python_phylo provides pysam + pandas + matplotlib + numpy, so it serves every Python
+# step (there is no standalone `pysam` env on this system).
+python_conda_env: python_phylo
+plink_conda_env: plink
+vcftools_conda_env: vcftools
+king_binary: /home/jilong/software/king
+
+# Toggle the frequency-based KING/PLINK all-pairs branch. The per-trio Mendelian
+# branch always runs. KING robust kinship is unreliable under social-spider
+# inbreeding, so new species run trio-only; MIM/BIC keep it (already completed).
+run_king_plink: true
+
+# Marker filtering parameters
+maf_threshold: 0.1
+min_gq: 20            # vcftools --minGQ: genotypes below this GQ are set to missing
+max_missing: 1.0      # vcftools --max-missing: 1.0 = genotyped in all individuals (0.9 = <=10% missing allowed)
+ld_prune: "50 5 0.2"
+
+# Kinship classification thresholds (KING robust kinship coefficient cut-offs)
+kinship_dup: 0.354       # > this  -> duplicate / monozygotic
+kinship_first: 0.177     # 0.177-0.354 -> 1st degree (parent-offspring or full-sib)
+kinship_second: 0.0884   # 0.0884-0.177 -> 2nd degree
+kinship_third: 0.0442    # 0.0442-0.0884 -> 3rd degree; <= this -> unrelated
+ibs0_po_max: 0.005       # within 1st degree: IBS0 below this -> parent-offspring, else full-sib
+
+# Per-trio Mendelian validation (parental opposite-homozygote test; allele-frequency-free,
+# robust to inbreeding). For each (F, M, S_k) trio, sites where the two parents are fixed
+# for opposite alleles (0/0 vs 1/1) require a genuine offspring to be heterozygous.
+trio_max_missing: 0.0       # vcftools --max-missing for the no-MAF trio VCF (0.0 = keep all sites)
+trio_min_gq: 20             # per-genotype GQ floor inside trio_mendel_check.py
+trio_min_dp: 26             # per-genotype depth (DP) floor; matches the de novo callability depth (guards low-depth homozygous miscalls)
+trio_consistency_min: 0.9   # offspring het-fraction >= this -> trio consistent
+trio_min_sites: 100         # min opposite-homozygote sites needed to issue a verdict
+
+# Species to process. Each entry: a genome-wide GATK VCF of all individuals.
+# Autosomes only are used downstream (sex chromosomes bic_X1/bic_X2 are dropped by the
+# autosome filter, which keeps only contigs named <name>_<digits>).
+# Full VCF = all 6 families (48 individuals); the keep.txt/keep_ind.txt in the GATK
+# source dir are DNM-analysis artifacts (families 2-3 only) and are NOT applied here.
+species:
+  BIC:
+    vcf: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/steps/gatk/genotype/BIC/BIC_GATK.vcf.gz

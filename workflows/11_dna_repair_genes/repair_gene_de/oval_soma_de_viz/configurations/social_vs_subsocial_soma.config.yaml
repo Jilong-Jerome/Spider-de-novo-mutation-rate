@@ -1,0 +1,21 @@
+TAG: jilong:spider2:oval_soma_de_viz:workflowconfiguration
+account: spider2
+project_name: social_vs_subsocial_soma_pathway_bar
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/repair_gene_de
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/repair_gene_de/oval_soma_de_viz/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/repair_gene_de/oval_soma_de_viz/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/repair_gene_de/oval_soma_de_viz/workflow_sources
+
+comparison: social_vs_subsocial_soma
+panel_title: "whole body"
+panel_index: 2
+input_csv: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/repair_gene_de/data/social_subsocial/soma/gene_summary_limma_adult_rpk_rounded.csv
+positive_label: social
+negative_label: subsocial
+log2fc_column: log2fc
+log2fc_threshold: 1.0
+positive_color: "#C0392B"
+negative_color: "#2E5A88"
+unbiased_color: "#888888"
+pathway_order: ["BER", "NER", "MMR", "HR", "NHEJ", "Fanconi_anemia"]
+consistency_column: is_dir_and_means_consist

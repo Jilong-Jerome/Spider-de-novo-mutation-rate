@@ -1,0 +1,17 @@
+TAG: jilong:spider2:dnm_location:SAR:workflowconfiguration
+account: spider2
+project_name: DNM Location Analysis - SAR
+project_id: SAR
+species_prefix: sar
+x_chromosomes:
+  - sar_X1
+  - sar_X2
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_location
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_location/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_location/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_location/dnm_distribution/workflow_sources
+callable_genome_dir: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_location/data/SAR/callable_genome
+callable_summary_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/steps/germline/minDP/SAR/callable/minDP_26/SAR_callable_minDP26.tsv
+dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_location/data/SAR/dnm/SAR_minDP_26_automate_classified.tsv
+genome_fai: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_location/data/SAR/genome/SAR_ncbi_chromosome.fa.fai
+window_size: 25000000

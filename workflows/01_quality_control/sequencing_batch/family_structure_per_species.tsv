@@ -1,0 +1,8 @@
+species	n_families	n_fathers_unique	n_mothers_unique	n_parents_unique	n_offspring_unique	n_sequenced_unique	expected_total	n_missing	n_surplus
+S_africanus	4	4	4	8	24	32	32	0	0
+S_bicolor	5	5	5	10	30	40	40	0	0
+S_dumicola	5	5	5	10	30	40	40	0	0
+S_lineatus	5	5	5	10	30	40	40	0	0
+S_mimosarum	5	3	4	7	32	39	40	3	4
+S_sarasinorum	5	5	5	10	30	40	40	0	0
+S_tentoriicola	5	5	5	10	30	40	40	0	0

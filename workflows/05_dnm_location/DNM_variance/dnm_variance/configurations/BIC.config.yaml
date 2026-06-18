@@ -1,0 +1,29 @@
+TAG: jilong:spider2:dnm_variance:BIC:workflowconfiguration
+account: spider2
+project_name: DNM Variance Analysis - BIC
+project_id: BIC
+species_prefix: bic
+x_chromosomes:
+  - bic_X1
+  - bic_X2
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/dnm_variance/workflow_sources
+dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/data/DNM/BIC_minDP_26_automate_classified.tsv
+callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/data/callable/BIC_callable_minDP26.tsv
+n_simulations: 1000
+random_seed: 42
+excluded_trios:
+  - BIC_family2_S1_offspring
+  - BIC_family2_S2_offspring
+  - BIC_family2_S3_offspring
+  - BIC_family2_S4_offspring
+  - BIC_family2_S5_offspring
+  - BIC_family2_S6_offspring
+  - BIC_family3_S1_offspring
+  - BIC_family3_S2_offspring
+  - BIC_family3_S3_offspring
+  - BIC_family3_S4_offspring
+  - BIC_family3_S5_offspring
+  - BIC_family3_S6_offspring

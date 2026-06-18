@@ -1,0 +1,22 @@
+# Tag identifying file association.
+TAG: jilong:spider2,germline_mutation:workflowconfiguration
+# The name of the relevant project account.
+account: spider2
+# Name of species being analyzed
+species_name: Stegodyphus lineatus
+# ID of species for short
+species_id : LIN
+# Reference genome
+ref_fasta: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/data/genome/LIN_ncbi_chromosome.fa
+# Directory for intermediary files.
+working_directory_path: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/steps/germline/X/minDP
+#Directory for final output files
+output_directory_path: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/steps/germline/X/minDP
+# Directory for log files
+log_directory_path: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/X/logs
+# Directory for helping functions and scripts
+help_scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/script/germline_call/workflow_X/workflow_sources
+# Directory for input data files
+data_directory_path: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/data/germline_scan
+# Directory for alignment bam files of individuals
+bam_directory_path: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/steps/align/bams

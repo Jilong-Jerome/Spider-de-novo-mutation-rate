@@ -1,0 +1,31 @@
+TAG: jilong:spider2:coverage_report:workflowconfiguration
+account: spider2
+species: BIC
+bam_dir: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/BIC
+vcf: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/BIC_GATK.vcf.gz
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/workflow_sources
+# Conda environments used by the workflow steps
+conda_samtools: samtools117
+conda_bcftools: bcftools
+conda_python: python_phylo
+# Chromosomes (from the BAM @SQ / VCF ##contig header). Per-chromosome VCF
+# targets are built from this list at graph-build time.
+chromosomes:
+  - bic_9
+  - bic_X1
+  - bic_2
+  - bic_8
+  - bic_3
+  - bic_X2
+  - bic_11
+  - bic_10
+  - bic_12
+  - bic_7
+  - bic_13
+  - bic_5
+  - bic_1
+  - bic_4
+  - bic_14
+  - bic_6

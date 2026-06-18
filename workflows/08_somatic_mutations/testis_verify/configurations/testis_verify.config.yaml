@@ -1,0 +1,60 @@
+# Testis Verification Workflow Configuration
+# Verify RNA-seq samples are testes by comparing testis-specific gene expression
+
+# Data paths
+data:
+  gene_list: "data/gene/human_testis_specific_genes.txt"
+  human_proteome: "data/gene/uniprotkb_proteome_UP000005640_AND_revi_2026_01_19.fasta"
+  genome: "data/genome/MIM/MIM_ncbi_chromosome.fa"
+  annotation: "data/genome/MIM/MIM_gene.gff3"
+
+# RNA-seq samples
+samples:
+  - name: "MIM_ovary_5"
+    r1: "data/sample/MIM_ovary_5_R1.fastq.gz"
+    r2: "data/sample/MIM_ovary_5_R2.fastq.gz"
+    type: "control"
+  - name: "MIM_testis_candidate_red"
+    r1: "data/sample/MIM_testis_candidate_red_R1.fastq.gz"
+    r2: "data/sample/MIM_testis_candidate_red_R2.fastq.gz"
+    type: "candidate"
+  - name: "MIM_testis_candidate_white"
+    r1: "data/sample/MIM_testis_candidate_white_R1.fastq.gz"
+    r2: "data/sample/MIM_testis_candidate_white_R2.fastq.gz"
+    type: "candidate"
+
+# Output directories
+output:
+  human_proteins: "steps/01_human_proteins"
+  mim_cds: "steps/02_mim_cds"
+  blast: "steps/03_blast"
+  alignment: "steps/04_alignment"
+  counts: "steps/05_counts"
+  analysis: "steps/06_analysis"
+  logs: "logs"
+
+# BLAST parameters
+blast:
+  evalue: 1e-5
+  max_target_seqs: 5
+  min_identity: 30.0
+  min_coverage: 50.0
+
+# STAR parameters
+star:
+  threads: 8
+
+# featureCounts parameters
+featurecounts:
+  feature_type: "gene"
+  attribute: "ID"
+  threads: 4
+
+# Conda environments
+conda:
+  python: "python_phylo"
+  agat: "agat"
+  blast: "ncbi_blast"
+  star: "STAR"
+  samtools: "samtools117"
+  featurecounts: "subread"

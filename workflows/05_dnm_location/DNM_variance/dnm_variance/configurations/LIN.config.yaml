@@ -1,0 +1,18 @@
+TAG: jilong:spider2:dnm_variance:LIN:workflowconfiguration
+account: spider2
+project_name: DNM Variance Analysis - LIN
+project_id: LIN
+species_prefix: lin
+x_chromosomes:
+  - lin_X1
+  - lin_X2
+  - lin_X3
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/dnm_variance/workflow_sources
+dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/data/DNM/LIN_minDP_26_automate_classified.tsv
+callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/data/callable/LIN_callable_minDP26.tsv
+n_simulations: 1000
+random_seed: 42
+excluded_trios: []

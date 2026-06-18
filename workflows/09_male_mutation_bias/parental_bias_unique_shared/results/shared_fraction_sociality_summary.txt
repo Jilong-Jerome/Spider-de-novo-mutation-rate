@@ -1,0 +1,60 @@
+======================================================================
+FILTERING SUMMARY
+======================================================================
+Raw rows loaded               : 921
+Rows with unparseable child   : 0  (excluded)
+Rows excluded (wrong species) : 0  (kept: AFR, BIC, DUM, LIN, MIM, SAR, TEN)
+Rows excluded (excluded fams) : 200  (BIC_family2, BIC_family3)
+Rows excluded (Phased == F)   : 9
+Rows retained for analysis    : 712
+
+======================================================================
+PER-SPECIES LOCUS COUNTS (collapsed events, F dropped)
+======================================================================
+Sociality  Species  Shared  Unique  Total  Shared_frac
+---------  -------  ------  ------  -----  -----------
+subsocial  AFR      2       121     123    1.63%      
+subsocial  BIC      16      88      104    15.38%     
+subsocial  LIN      8       165     173    4.62%      
+subsocial  TEN      1       78      79     1.27%      
+social     DUM      0       89      89     0.00%      
+social     MIM      0       75      75     0.00%      
+social     SAR      0       34      34     0.00%      
+
+======================================================================
+POOLED COUNTS BY SOCIALITY
+======================================================================
+Sociality  Shared  Unique  Total  Shared_frac
+---------  ------  ------  -----  -----------
+subsocial  27      452     479    5.64%      
+social     0       198     198    0.00%      
+
+======================================================================
+FISHER'S EXACT TEST (sociality x sharing class)
+======================================================================
+
+2x2 contingency table:
+                  Shared        Unique
+  Subsocial            27           452
+  Social                0           198
+
+Odds ratio (raw)            : inf  (zero social shared cell)
+Odds ratio (pseudocount +1) : 12.3002
+P-value                     : 0.0001141
+Result                      : significant (a=0.05)
+
+======================================================================
+NOTES
+======================================================================
+1. Sociality groups : social = DUM, MIM, SAR; subsocial = AFR, BIC, LIN, TEN.
+2. Excluded families: BIC_family2, BIC_family3, SAR_family3
+   (SAR_family3 is not present in the data; listed for completeness).
+3. Rows with Phased == 'F' (unphaseable) dropped before locus counting,
+   matching DNM_alpha/workflow_sources/summarize_shared_mutations.py.
+4. Loci collapsed to one event per (chrom, pos, ref, alt, family).
+5. Sibling-shared = locus seen in >= 2 offspring of a family; else unique.
+6. Fisher's exact test pooled across species within each sociality group,
+   two-sided. The raw OR is infinite when the social shared cell is 0;
+   the pseudocount OR adds 1 to each cell for a finite estimate.
+   The pseudocount affects only the OR, not the Fisher p-value.
+7. Analysis run: 2026-06-08 10:45:34

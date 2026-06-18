@@ -1,0 +1,53 @@
+TAG: jilong:spider2:dS_branch_trio:workflowconfiguration
+account: spider2
+project_name: dS Branch Trio Analysis
+project_id: trio_dnds
+trio_name: MIM_AFR_BIC
+
+# Directories
+base_directory: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/dS_branch_trio
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/dS_branch_trio
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/dS_branch_trio/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/dS_branch_trio/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/dS_branch_trio/workflow_sources
+data_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/dS_branch_trio/data
+
+# Reference
+reference_genome: data/reference/BIC/BIC.fasta
+reference_annotation: data/reference/BIC/BIC.gff3
+reference_species: BIC
+autosomal_chromosomes: [bic_1, bic_2, bic_3, bic_4, bic_5, bic_6, bic_7, bic_8, bic_9, bic_10, bic_11, bic_12, bic_13, bic_14]
+x_chromosome_prefixes: [bic_X]
+
+# Species to map (reads -> BIC reference)
+mapping_species:
+  MIM:
+    read1: data/fastq/MIM/MIM_family1_F_female_R1.fq.gz
+    read2: data/fastq/MIM/MIM_family1_F_female_R2.fq.gz
+  AFR:
+    read1: data/fastq/AFR/AFR_family1_F_female_R1.fq.gz
+    read2: data/fastq/AFR/AFR_family1_F_female_R2.fq.gz
+
+# Trio tree (Newick format for PAML - used later in Part 2)
+trio_tree: "((MIM,AFR),BIC)"
+
+# Quality filters
+min_mapping_quality: 60
+min_base_quality: 20
+min_depth: 5
+min_coverage_fraction: 0.80
+# Supported consensus modes: majority, random, using_ref, using_alt
+# To enable all modes, use:
+# consensus_modes: [majority, random, using_ref, using_alt]
+consensus_modes: [random]
+consensus_support_policies: [strict, relaxed]
+random_consensus_seed: 20260514
+
+# Bootstrap PAML (Part 2)
+n_bootstrap: 500
+
+# Conda environments
+conda_bwa2: bwa2
+conda_samtools: samtools117
+conda_bcftools: bcftools
+conda_python: python_phylo

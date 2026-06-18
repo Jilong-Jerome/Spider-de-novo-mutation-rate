@@ -1,0 +1,149 @@
+TAG: jilong:spider2:dnm_spectrum:workflowconfiguration
+account: spider2
+project_name: DNM Spectrum Analysis
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/dnm_spectrum/workflow_sources
+samtools_conda_env: samtools117
+python_conda_env: python_phylo
+
+# Root containing per-(species, offspring, chrom) callable VCFs:
+#   {germline_callable_vcf_root}/{SP}/callable/minDP_26/{offspring_id}/chrom_split/{offspring_id}_{chrom}_callable_sites.vcf
+germline_callable_vcf_root: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/steps/germline/minDP
+
+species:
+  AFR:
+    genome: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/genome/AFR_ncbi_chromosome.fa
+    dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/germline/AFR_minDP_26_automate_classified.tsv
+    somatic_dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/somatic/AFR_final_mutation_table_no_clusters.tsv
+    germline_callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/germline/AFR_callable_minDP26.tsv
+    somatic_trinuc_counts_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/somatic/AFR_trinuc_counts.tsv
+    x_chromosomes:
+      - afr_X1
+      - afr_X2
+    exclude_trios: []
+
+  BIC:
+    genome: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/genome/BIC_ncbi_chromosome.fa
+    dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/germline/BIC_minDP_26_automate_classified.tsv
+    somatic_dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/somatic/BIC_final_mutation_table_no_clusters.tsv
+    germline_callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/germline/BIC_callable_minDP26.tsv
+    somatic_trinuc_counts_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/somatic/BIC_trinuc_counts.tsv
+    x_chromosomes:
+      - bic_X1
+      - bic_X2
+    exclude_trios:
+      - BIC_family2_S1_offspring
+      - BIC_family2_S2_offspring
+      - BIC_family2_S3_offspring
+      - BIC_family2_S4_offspring
+      - BIC_family2_S5_offspring
+      - BIC_family2_S6_offspring
+      - BIC_family3_S1_offspring
+      - BIC_family3_S2_offspring
+      - BIC_family3_S3_offspring
+      - BIC_family3_S4_offspring
+      - BIC_family3_S5_offspring
+      - BIC_family3_S6_offspring
+
+  DUM:
+    genome: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/genome/DUM_ncbi_chromosome.fa
+    dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/germline/DUM_minDP_26_automate_classified.tsv
+    somatic_dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/somatic/DUM_final_mutation_table_no_clusters.tsv
+    germline_callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/germline/DUM_callable_minDP26.tsv
+    somatic_trinuc_counts_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/somatic/DUM_trinuc_counts.tsv
+    x_chromosomes:
+      - dum_X1
+      - dum_X2
+    exclude_trios: []
+
+  LIN:
+    genome: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/genome/LIN_ncbi_chromosome.fa
+    dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/germline/LIN_minDP_26_automate_classified.tsv
+    somatic_dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/somatic/LIN_final_mutation_table_no_clusters.tsv
+    germline_callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/germline/LIN_callable_minDP26.tsv
+    somatic_trinuc_counts_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/somatic/LIN_trinuc_counts.tsv
+    x_chromosomes:
+      - lin_X1
+      - lin_X2
+      - lin_X3
+    exclude_trios: []
+
+  MIM:
+    genome: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/genome/MIM_ncbi_chromosome.fa
+    dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/germline/MIM_minDP_26_automate_classified.tsv
+    somatic_dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/somatic/MIM_final_mutation_table_no_clusters.tsv
+    germline_callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/germline/MIM_callable_minDP26.tsv
+    somatic_trinuc_counts_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/somatic/MIM_trinuc_counts.tsv
+    x_chromosomes:
+      - mim_X1
+      - mim_X2
+    exclude_trios: []
+
+  SAR:
+    genome: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/genome/SAR_ncbi_chromosome.fa
+    dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/germline/SAR_minDP_26_automate_classified.tsv
+    somatic_dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/somatic/SAR_final_mutation_table_no_clusters.tsv
+    germline_callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/germline/SAR_callable_minDP26.tsv
+    somatic_trinuc_counts_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/somatic/SAR_trinuc_counts.tsv
+    x_chromosomes:
+      - sar_X1
+      - sar_X2
+    exclude_trios:
+      - SAR_family3_S1_offspring
+      - SAR_family3_S2_offspring
+      - SAR_family3_S3_offspring
+      - SAR_family3_S4_offspring
+      - SAR_family3_S5_offspring
+      - SAR_family3_S6_offspring
+
+  TEN:
+    genome: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/genome/TEN_ncbi_chromosome.fa
+    dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/germline/TEN_minDP_26_automate_classified.tsv
+    somatic_dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/dnm/somatic/TEN_final_mutation_table_no_clusters.tsv
+    germline_callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/germline/TEN_callable_minDP26.tsv
+    somatic_trinuc_counts_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/data/callable_sites/somatic/TEN_trinuc_counts.tsv
+    x_chromosomes:
+      - ten_X1
+      - ten_X2
+    exclude_trios: []
+
+# Locally computed somatic 96-cat spectra (see {SP}_somatic_spectrum target).
+somatic_spectra:
+  AFR: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/somatic_spectrum/AFR/AFR_somatic_spectrum.tsv
+  BIC: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/somatic_spectrum/BIC/BIC_somatic_spectrum.tsv
+  DUM: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/somatic_spectrum/DUM/DUM_somatic_spectrum.tsv
+  LIN: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/somatic_spectrum/LIN/LIN_somatic_spectrum.tsv
+  MIM: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/somatic_spectrum/MIM/MIM_somatic_spectrum.tsv
+  SAR: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/somatic_spectrum/SAR/SAR_somatic_spectrum.tsv
+  TEN: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_spectrum_compare/steps/somatic_spectrum/TEN/TEN_somatic_spectrum.tsv
+
+species_tree_newick: "(LIN,(((DUM,TEN),(SAR,BIC)),(MIM,AFR)));"
+
+social_subsocial_pairs:
+  - [DUM, TEN]
+  - [SAR, BIC]
+  - [MIM, AFR]
+
+spectrum_groups:
+  all_species:
+    species:
+      - AFR
+      - BIC
+      - DUM
+      - LIN
+      - MIM
+      - SAR
+      - TEN
+  social:
+    species:
+      - DUM
+      - MIM
+      - SAR
+  subsocial:
+    species:
+      - TEN
+      - BIC
+      - AFR
+      - LIN

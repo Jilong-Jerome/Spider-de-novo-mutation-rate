@@ -1,0 +1,17 @@
+TAG: jilong:spider2:dnm_variance:DUM:workflowconfiguration
+account: spider2
+project_name: DNM Variance Analysis - DUM
+project_id: DUM
+species_prefix: dum
+x_chromosomes:
+  - dum_X1
+  - dum_X2
+working_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/dnm_variance/workflow_sources
+dnm_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/data/DNM/DUM_minDP_26_automate_classified.tsv
+callable_file: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/DNM_variance/data/callable/DUM_callable_minDP26.tsv
+n_simulations: 1000
+random_seed: 42
+excluded_trios: []

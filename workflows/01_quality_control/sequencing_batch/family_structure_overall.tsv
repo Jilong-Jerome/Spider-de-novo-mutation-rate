@@ -1,0 +1,16 @@
+metric	value
+n_species	7
+n_families	34
+n_sequenced_unique_individuals	271
+n_parents_unique	65
+n_fathers_unique	32
+n_mothers_unique	33
+n_offspring_unique	206
+n_family_slot_records	273
+n_shared_parents	2
+shared_parents	7.M;8.M
+expected_total_slots	272
+n_missing	3
+n_missing_parents	1
+n_missing_offspring	2
+n_surplus_offspring	4

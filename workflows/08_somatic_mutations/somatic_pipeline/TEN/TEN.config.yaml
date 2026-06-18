@@ -1,0 +1,22 @@
+# Tag identifying file association.
+TAG: jilong:spider2,somatic_mutation_scanning,pbmm2:workflowconfiguration
+# The name of the relevant project account.
+account: spider2
+# Name of species being analyzed
+species_name: Stegodpyhus tentoriicola
+# ID of species for short
+species_id : SteTen
+# Path to the raw contig assembly in fasta, that is to be purged
+assembly_file_path: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/data/diploid_genome/TEN/TEN_diploid.fa
+# Path to the pacbio hifi reads building the raw assembly fasta
+pacbio_seq_file_path: /home/jilong/spider2/faststorage/social_spiders_2020/data/BACKUP/Pacbio_Hifi/TENT/TENT_HiFi.fastq.gz
+# Name of the task as a unique id:
+task_id: SteTen_somatic
+# Directory for intermediary files.
+working_directory_path: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/steps/somatic/TEN
+#Directory for final output files
+output_directory_path: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/steps/somatic/TEN
+# Directory for log files
+log_directory_path: /home/jilong/spider2/faststorage/social_spiders_2020/people/jilong/chapter3_dnm/steps/somatic/TEN/logs
+
+

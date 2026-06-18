@@ -1,0 +1,12 @@
+Simulation Parameters:
+initial_num_males: 50
+initial_num_females: 50
+T_max: 500.0
+dt: 0.1
+alpha: 0.0001
+death_rate_moving: 0.1
+death_rate_mating: 0.6
+death_rate_female: 0.01
+generation_interval: 2.0
+new_generation_males: 50
+new_generation_females: 50

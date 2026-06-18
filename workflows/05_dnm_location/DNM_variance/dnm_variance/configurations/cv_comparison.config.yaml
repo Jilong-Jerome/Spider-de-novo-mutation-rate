@@ -1,0 +1,27 @@
+TAG: jilong:spider2:dnm_variance:cv_comparison:workflowconfiguration
+account: spider2
+
+# Sociality groupings
+# subsocial species (species prefixes, lowercase)
+subsocial:
+  - afr
+  - bic
+  - lin
+  - ten
+
+# social species (species prefixes, lowercase)
+social:
+  - dum
+  - mim
+  - sar
+
+# Phylogenetically controlled sister-species pairs (subsocial:social)
+# Each pair consists of the closest relatives between the two groups.
+# LIN has no social sister in this dataset and is excluded from pairwise test.
+sister_pairs:
+  - bic:sar
+  - afr:mim
+  - ten:dum
+
+n_simulations: 10000
+random_seed: 42

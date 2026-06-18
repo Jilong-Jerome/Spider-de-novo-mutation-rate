@@ -1,0 +1,83 @@
+# ---------------------------------------------------------------------------
+# Reproducibility repo: code + small metadata only.
+# Raw reads, genomes, alignments, variant calls and all large intermediate
+# outputs are deposited in public archives (see docs/DATA_AVAILABILITY.md),
+# NOT in git.
+# ---------------------------------------------------------------------------
+
+# Workflow run state / scratch
+**/.gwf/
+**/logs/
+**/steps/
+**/data/
+**/__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Editor / OS cruft
+*~
+*.swp
+.DS_Store
+.codex
+.claude/
+
+# Sequences, alignments, indices
+*.fa
+*.fasta
+*.fna
+*.fa.*
+*.fai
+*.mmi
+*.dict
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+*.ht2
+*.bt2
+
+# Alignments / variants
+*.bam
+*.bai
+*.cram
+*.sam
+*.vcf
+*.vcf.gz
+*.bcf
+*.csi
+*.tbi
+*.bed
+
+# Compressed blobs
+*.gz
+*.bgz
+*.zip
+*.tar
+
+# PAML / phylo intermediates
+*.phy
+*.nuc
+*.dN
+*.dS
+*.ctl
+*.tab
+*.region
+*.cat
+rst
+rst1
+rub
+2NG.*
+lnf
+mlc
+4fold.nuc
+
+# Run markers / logs
+*.DONE
+*.depth
+Log.out
+*.stderr
+*.stdout
+
+# Safety net: anything unexpectedly large
+# (review before committing if a needed file is bigger than this)

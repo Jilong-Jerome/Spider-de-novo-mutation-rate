@@ -1,0 +1,31 @@
+TAG: jilong:spider2:coverage_report:workflowconfiguration
+account: spider2
+species: SAR
+bam_dir: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/SAR
+vcf: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/data/SAR_GATK.vcf.gz
+output_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/steps
+log_directory_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/logs
+scripts_path: /faststorage/project/spider2/social_spiders_2020/people/jilong/chapter3_dnm/science_resub/callable_depth/coverage_report/workflow_sources
+# Conda environments used by the workflow steps
+conda_samtools: samtools117
+conda_bcftools: bcftools
+conda_python: python_phylo
+# Chromosomes (from the BAM @SQ / VCF ##contig header). Per-chromosome VCF
+# targets are built from this list at graph-build time.
+chromosomes:
+  - sar_2
+  - sar_X1
+  - sar_9
+  - sar_8
+  - sar_3
+  - sar_X2
+  - sar_11
+  - sar_10
+  - sar_7
+  - sar_12
+  - sar_13
+  - sar_1
+  - sar_4
+  - sar_5
+  - sar_14
+  - sar_6
