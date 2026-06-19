@@ -33,7 +33,7 @@ independently multiple times):
 
 ## Repository layout
 
-Analysis pipeline, in reproduction order:
+Analysis pipeline:
 
 | Stage | Description |
 |-------|-------------|
