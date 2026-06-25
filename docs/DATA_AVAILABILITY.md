@@ -26,6 +26,10 @@ Chromosome-level assemblies (HiFi + Hi-C) used as mapping references for AFR, BI
   - AFR: ``
   - LIN: `GCA_044657705.1`
 
+The exact genome annotations can be found in
+- Relevant data:
+	https://github.com/Jilong-Jerome/sociality-in-spiders-dead-end/tree/main?tab=readme-ov-file
+	https://drive.google.com/drive/folders/16fIrBR4WrqV_NZBOF8aL6mcuzGkkhM9E
 
 ## RNA-seq (DNA-repair gene expression)
 
