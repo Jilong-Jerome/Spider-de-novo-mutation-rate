@@ -10,7 +10,7 @@ Whole-genome short reads (DNBSEQ-G400 / Illumina) for the seven *Stegodyphus*
 species and their families.
 
 - Repository: NCBI SRA
-- BioProject: PRJNA994315
+- BioProject: `` 
 
 ## Reference genomes & annotations
 
@@ -23,7 +23,7 @@ Chromosome-level assemblies (HiFi + Hi-C) used as mapping references for AFR, BI
   - SAR: `GCA_044658445.1`
   - BIC: `GCA_044657725.1`
   - MIM: `GCA_044660205.1`
-  - AFR: ``
+  - AFR: `GCA_056512425.1`
   - LIN: `GCA_044657705.1`
 
 The exact genome annotations can be found in
@@ -34,7 +34,9 @@ The exact genome annotations can be found in
 ## RNA-seq (DNA-repair gene expression)
 
 - Repository: NCBI SRA
-- BioProject: PRJNA994315
+- BioProject: 
+  - Whole body RNAseq: `PRJNA994315`
+  - Ovary RNAseq:
 
 ## Processed / intermediate data and results
 
