@@ -17,6 +17,7 @@ species and their families.
 Chromosome-level assemblies (HiFi + Hi-C) used as mapping references for AFR, BIC, DUM, LIN, MIM, SAR, TEN.
 
 - Repository: NCBI Assembly
+- BioProject: `PRJNA994315`,`PRJNA1234535`
 - Accessions: 
   - DUM: `GCA_044657685.1`
   - TEN: `GCA_044658465.1`
