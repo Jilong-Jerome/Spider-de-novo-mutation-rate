@@ -9,30 +9,33 @@ the accession numbers below before/at publication.
 Whole-genome short reads (DNBSEQ-G400 / Illumina) for the seven *Stegodyphus*
 species and their families.
 
-- Repository: NCBI SRA / EBI ENA
-- BioProject: `TODO-PRJNAxxxxxx`
-- Per-sample accessions: see `TODO` (supplementary table)
+- Repository: NCBI SRA
+- BioProject: PRJNA994315
 
 ## Reference genomes & annotations
 
-Chromosome-level assemblies (HiFi + Hi-C) and gene annotations used as mapping
-references (`*_ncbi_chromosome.fa`, `*.gff3`) for AFR, BIC, DUM, LIN, MIM, SAR, TEN.
+Chromosome-level assemblies (HiFi + Hi-C) used as mapping references for AFR, BIC, DUM, LIN, MIM, SAR, TEN.
 
-- Repository: NCBI Assembly / GenBank
-- Accessions: `TODO-GCA_xxxxxxxxx` (one per species)
+- Repository: NCBI Assembly
+- Accessions: 
+  - DUM: `GCA_044657685.1`
+  - TEN: `GCA_044658465.1`
+  - SAR: `GCA_044658445.1`
+  - BIC: `GCA_044657725.1`
+  - MIM: `GCA_044660205.1`
+  - AFR: ``
+  - LIN: `GCA_044657705.1`
 
-## RNA-seq (DNA-repair gene expression, testis validation)
 
-- Repository: NCBI SRA / EBI ENA
-- BioProject: `TODO-PRJNAxxxxxx`
+## RNA-seq (DNA-repair gene expression)
+
+- Repository: NCBI SRA
+- BioProject: PRJNA994315
 
 ## Processed / intermediate data and results
 
 Alignments (BAM), variant calls (VCF), callable-site BEDs, DNM call sets, mutation
 spectra and other large intermediates are too large for git.
-
-- Repository: Zenodo / Figshare / Dryad
-- DOI: `TODO-10.5281/zenodo.xxxxxxx`
 
 ## Mapping of file-name codes
 
